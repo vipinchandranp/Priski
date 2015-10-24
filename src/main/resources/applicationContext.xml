@@ -26,8 +26,8 @@
 
     <fss:oauth>
         <fss:oauthInfo endpoint="http://login.salesforce.com"
-                       oauth-key="#{systemEnvironment['OAUTH_CLIENT_KEY']}"
-                       oauth-secret="#{systemEnvironment['OAUTH_CLIENT_SECRET']}"/>
+                       oauth-key="3MVG9ZL0ppGP5UrDr5JNRUW8R3I7npYLp3mOC8p_iZSPGfILsvsMNA.0msxkjkhDhirYq3oa9ZWYlMFgkl.i7"
+                       oauth-secret="7552085295659644947"/>
     </fss:oauth>
     
     <security:http use-expressions="true">
