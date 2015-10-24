@@ -25,7 +25,7 @@ public class PersonController {
         map.put("person", new Person());
         map.put("peopleList", personService.listPeople());
 
-        return "people";
+        return "people"; 
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
