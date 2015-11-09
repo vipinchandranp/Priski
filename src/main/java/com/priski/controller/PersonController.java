@@ -10,6 +10,7 @@ import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.sax.ToXMLContentHandler;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -79,6 +80,8 @@ public class PersonController {
 				
 				try {
 					 parsedJson = rp.loadGateAndAnnie(htmlFile);
+					 JSONArray skills = (JSONArray) parsedJson.get("skills");
+					 person.setSkills(skills.get(0).toString());
 				} catch (GateException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

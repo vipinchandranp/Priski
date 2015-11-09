@@ -15,6 +15,12 @@ public class Person {
 	@JsonProperty(value = "LastName")
 	private String lastName;
 
+	@JsonProperty(value = "Skills__c")
+	private String skills;
+
+	@JsonProperty(value = "Phone_c")
+	private String phone;
+
 	public String getId() {
 		return id;
 	}
@@ -37,6 +43,22 @@ public class Person {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getSkills() {
+		return skills;
+	}
+
+	public void setSkills(String skills) {
+		this.skills = skills;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 }
